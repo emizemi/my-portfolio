@@ -29,31 +29,38 @@ const educationData = [
 const experienceData = [
   {
     id: 1,
-    title: "CS 160 Teaching Assistant, Tufts University Department of CS, Somerville MA",
-    years: "September 2021 - Present",
+    title: "Software Engineer Intern, Cisco, Remote",
+    years: "June 2022 - Present",
     content:
-      "Will be conducting recitations and office hours for the upper-level Algorithms course at Tufts",
+      "Currently working on Cisco SD-WAN in the Enterprise Networks organization. Programmed using Angular, Java, Neo4j.",
   },
   {
     id: 2,
-    title: "Frontend Web Developer, JumboCode, Somerville MA",
-    years: "September 2019 - Present",
+    title: "CS 160 Teaching Assistant, Tufts University Department of CS, Somerville MA",
+    years: "September 2021 - December 2021",
     content:
-      "Worked with non-profits by coding custom technology to aid their services. Programmed using React.",
+      "Taught students in recitations and office hours to solidify their understanding of content in the upper-level Algorithms course at Tufts.",
   },
   {
     id: 3,
-    title: "Software Engineer Intern, Cisco, Remote Work",
+    title: "Software Engineer Intern, Cisco, Remote",
     years: "June 2021 - August 2021",
     content:
-      "Worked with the Emerging Technologies & Incubation team to develop new and upcoming technologies. Programmed using React, Python, Kubernetes.",
+      "Programmed a web app that displays network metrics about various Cisco clusters and developed a sidecar authentication app for Cisco apps deployed on AWS. Programmed using React, Python, Kubernetes, SQL.",
   },
   {
     id: 4,
+    title: "Frontend Web Developer, JumboCode, Somerville MA",
+    years: "September 2019 - May 2021",
+    content:
+      "Coded the front end of a web app developed for the Just-A-Start YouthBuild program, which educates teenagers who have dropped out of high school. Programmed using React.",
+  },
+  {
+    id: 5,
     title: "iOS Developer Intern, JazzAsia, Singapore",
     years: "April 2017 - August 2017",
     content:
-      "Built a mobile application for the JazzAsia workshop with one other developer. Programmed using Swift, Xcode, and Firebase.",
+      "Built a iOS application for the JazzAsia workshop so attendees could view their customized class schedules. Programmed using Swift, Xcode, and Firebase.",
   }
 ];
 
@@ -67,7 +74,9 @@ function Experiences() {
             <div className="spacer d-md-none d-lg-none" data-height="30"></div>
             <div className="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
               {experienceData.map((experience) => (
-                <Timeline key={experience.id} education={experience} />
+                <section style={{ padding: 15 }}>
+                  <Timeline key={experience.id} education={experience} />
+                </section>
               ))}
               <span className="line"></span>
             </div>
