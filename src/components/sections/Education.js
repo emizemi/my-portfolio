@@ -52,7 +52,9 @@ function Experiences() {
           <div className="col-md-12">
             <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
               {educationData.map((education) => (
-                <Timeline key={education.id} education={education} />
+                <section style={{ paddingBottom: 35, paddingTop: 0 }}>
+                  <Timeline key={education.id} education={education} />
+                </section>
               ))}
               <span className="line"></span>
             </div>

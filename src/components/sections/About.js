@@ -109,7 +109,7 @@ function About() {
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
                     <a href="EmilioEncarnacionResume.pdf" className="btn btn-default" download>
-                      Download CV
+                      Download resume
                     </a>
                   </div>
                   <div
